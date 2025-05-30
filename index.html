@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Upcoming Matches</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="floating-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="basketball-icon">🏀</div>
+            <h1>Upcoming Basketball Matches</h1>
+            <p>Stay updated with the latest NBA game schedules</p>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            Loading upcoming matches...
+        </div>
+
+        <div id="matches-container" class="matches-grid" style="display: none;"></div>
+
+        <div id="error-container" style="display: none;"></div>
+
+        <div class="api-info">
+            <h3>📡 API Information</h3>
+            <p><strong>Current Mode:</strong> Demo with Mock Data</p>
+            <div class="api-url">
+                Primary: https://api-sports.io/documentation/basketball<br>
+                Alternative: https://www.api-basketball.com<br>
+                Fallback: Mock NBA data for demonstration
+            </div>
+            <p>This application demonstrates basketball match display with realistic NBA data. You can easily switch to a live API by updating the configuration in app.js.</p>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
